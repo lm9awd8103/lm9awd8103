@@ -332,7 +332,7 @@ adjustTransparency(Main)
     title.RichText = true
     title.Text = kavName
     title.TextColor3 = Color3.fromRGB(255, 25, 25 )
-    title.TextSize = 20.000
+    title.TextSize = 19.000
     title.TextXAlignment = Enum.TextXAlignment.Left
    
    local title2 = Instance.new("TextLabel")
@@ -346,7 +346,7 @@ adjustTransparency(Main)
     title2.Size = UDim2.new(0, 204, 0, 8)
     title2.Font = Enum.Font.FredokaOne
     title2.RichText = true
-    title2.Text = "Made by Nms"
+    title2.Text = "  Made by xlm9awd"
     title2.TextColor3 = Color3.fromRGB(255, 218, 31)
     title2.TextSize = 14.000
     title2.TextXAlignment = Enum.TextXAlignment.Left
@@ -362,8 +362,8 @@ adjustTransparency(Main)
     title3.Size = UDim2.new(0, 204, 0, 8)
     title3.Font = Enum.Font.FredokaOne
     title3.RichText = true
-    title3.Text = "                    V1.2"
-    title3.TextColor3 = Color3.fromRGB(255, 255, 255)
+    title3.Text = "                                  V2.7"
+    title3.TextColor3 = Color3.fromRGB(128, 0, 255)
     title3.TextSize = 14.000
     title3.TextXAlignment = Enum.TextXAlignment.Left
 
