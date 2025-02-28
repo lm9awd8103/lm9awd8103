@@ -346,7 +346,7 @@ adjustTransparency(Main)
     title2.Size = UDim2.new(0, 204, 0, 8)
     title2.Font = Enum.Font.FredokaOne
     title2.RichText = true
-    title2.Text = "  Made by xlm9awd"
+    title2.Text = "Made by xlm9awd"
     title2.TextColor3 = Color3.fromRGB(255, 218, 31)
     title2.TextSize = 14.000
     title2.TextXAlignment = Enum.TextXAlignment.Left
