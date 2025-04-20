@@ -2699,46 +2699,47 @@ end)
 
                 onrainbow.MouseButton1Click:Connect(togglerainbow)
                 --
-    rgb.MouseButton1Down:connect(function()
+    local colorPickerConn, darknessConn
+    local colorPickerRelease, darknessRelease
+
+    rgb.MouseButton1Down:Connect(function()
         colorpicker = true
-        -- Connect movement handler only while dragging
-        local conn = mouse.Move:Connect(function()
-            if colorpicker then
-                cp()
-            else
-                conn:Disconnect()
-            end
-        end)
+        -- Create new connection for this drag session
+        colorPickerConn = mouse.Move:Connect(cp)
         
-        -- Disconnect when mouse button is released
-        local releaseConn
-        releaseConn = uis.InputEnded:Connect(function(input)
-            if input.UserInputType.Name == 'MouseButton1' then
+        -- Set up release handler
+        colorPickerRelease = uis.InputEnded:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
                 colorpicker = false
-                if conn then conn:Disconnect() end
-                if releaseConn then releaseConn:Disconnect() end
+                if colorPickerConn then
+                    colorPickerConn:Disconnect()
+                    colorPickerConn = nil
+                end
+                if colorPickerRelease then
+                    colorPickerRelease:Disconnect()
+                    colorPickerRelease = nil
+                end
             end
         end)
     end)
-    
-    dark.MouseButton1Down:connect(function()
+
+    dark.MouseButton1Down:Connect(function()
         darknesss = true
-        -- Connect movement handler only while dragging
-        local conn = mouse.Move:Connect(function()
-            if darknesss then
-                cp()
-            else
-                conn:Disconnect()
-            end
-        end)
+        -- Create new connection for this drag session
+        darknessConn = mouse.Move:Connect(cp)
         
-        -- Disconnect when mouse button is released
-        local releaseConn
-        releaseConn = uis.InputEnded:Connect(function(input)
-            if input.UserInputType.Name == 'MouseButton1' then
+        -- Set up release handler
+        darknessRelease = uis.InputEnded:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
                 darknesss = false
-                if conn then conn:Disconnect() end
-                if releaseConn then releaseConn:Disconnect() end
+                if darknessConn then
+                    darknessConn:Disconnect()
+                    darknessConn = nil
+                end
+                if darknessRelease then
+                    darknessRelease:Disconnect()
+                    darknessRelease = nil
+                end
             end
         end)
     end)
