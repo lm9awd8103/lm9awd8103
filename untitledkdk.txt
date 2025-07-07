@@ -268,7 +268,7 @@ BackgroundImage.Size = UDim2.new(1, 0, 1, 0)
 BackgroundImage.ZIndex = 10  -- Keep background below text
 BackgroundImage.Image = "rbxassetid://138708735374190"
 BackgroundImage.ScaleType = Enum.ScaleType.Crop
-BackgroundImage.ImageTransparency = 0.85-- More faded background for better text visibility
+BackgroundImage.ImageTransparency = 0.70-- More faded background for better text visibility
 
 -- Function to adjust transparency and layering
 local function adjustTransparency(parent)
@@ -330,7 +330,7 @@ adjustTransparency(Main)
     title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     title.BackgroundTransparency = 1.000
     title.BorderSizePixel = 0
-    title.Position = UDim2.new(0, 30, 0, 7)
+    title.Position = UDim2.new(0, 5, 0, 7)
     title.Size = UDim2.new(0, 250, 0, 9)
     title.Font = Enum.Font.FredokaOne
     title.RichText = true
