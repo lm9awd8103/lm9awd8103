@@ -268,7 +268,7 @@ BackgroundImage.Size = UDim2.new(1, 0, 1, 0)
 BackgroundImage.ZIndex = 10  -- Keep background below text
 BackgroundImage.Image = "rbxassetid://138708735374190"
 BackgroundImage.ScaleType = Enum.ScaleType.Crop
-BackgroundImage.ImageTransparency = 0.85  -- More faded background for better text visibility
+BackgroundImage.ImageTransparency = 0.95  -- More faded background for better text visibility
 
 -- Function to adjust transparency and layering
 local function adjustTransparency(parent)
@@ -331,40 +331,14 @@ adjustTransparency(Main)
     title.BackgroundTransparency = 1.000
     title.BorderSizePixel = 0
     title.Position = UDim2.new(0, 50, 0, 7)
-    title.Size = UDim2.new(0, 210, 0, 9)
+    title.Size = UDim2.new(0, 205, 0, 9)
     title.Font = Enum.Font.FredokaOne
     title.RichText = true
     title.Text = kavName
     title.TextColor3 = Color3.fromRGB(128, 0, 255)
-    title.TextSize = 19.000
+    title.TextSize = 20.000
     title.TextXAlignment = Enum.TextXAlignment.Left
    
-   local title2 = Instance.new("TextLabel")
-  
-  title2.Name = "title2"
-    title2.Parent = MainHeader
-    title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    title2.BackgroundTransparency = 1.000
-    title2.BorderSizePixel = 0
-    title2.Position = UDim2.new(0, 170, 0, 7)
-    title2.Size = UDim2.new(0, 204, 0, 8)
-    title2.Font = Enum.Font.FredokaOne
-    title2.RichText = true
-    title2.Text = "       V2.1"
-    title2.TextColor3 = Color3.fromRGB(255, 218, 31)
-    title2.TextSize = 14.000
-    title2.TextXAlignment = Enum.TextXAlignment.Left
-    
-    
-    local Logo = Instance.new("ImageLabel")
-    
-    Logo.Name = "Logo"
-    Logo.Parent = MainHeader
-    Logo.BackgroundTransparency = 1.000
-    Logo.Position = UDim2.new(0, 10, 0, 3)
-    Logo.Size = UDim2.new(0, 30, 0, 25)
-    Logo.ZIndex = 2
-    Logo.Image = "http://www.roblox.com/asset/?id=100580733094215"
     
 -- RAINBOW BORDER (even tighter fit)
 local RunService = game:GetService("RunService")
