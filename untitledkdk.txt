@@ -330,7 +330,7 @@ adjustTransparency(Main)
     title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     title.BackgroundTransparency = 1.000
     title.BorderSizePixel = 0
-    title.Position = UDim2.new(0, 5, 0, 7)
+    title.Position = UDim2.new(0, 25, 0, 7)
     title.Size = UDim2.new(0, 250, 0, 9)
     title.Font = Enum.Font.FredokaOne
     title.RichText = true
