@@ -364,7 +364,7 @@ input.TextTransparency = 1
 Instance.new("UICorner", input).CornerRadius = UDim.new(0, 8)
 
 local info = Instance.new("TextLabel", container)
-info.Text = "Contact The Owner (Swight) To Get Whitelisted\nDc: vxl2ntino"
+info.Text = "Contact The Owner (Swight) To Get Whitelisted\nDc: swightx2"
 info.Size = UDim2.new(0.9, 0, 0, 40) -- increase height to fit 2 lines
 info.Position = UDim2.new(0.05, 0, 0, 100)
 info.BackgroundTransparency = 1
