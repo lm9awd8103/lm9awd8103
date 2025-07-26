@@ -295,7 +295,7 @@ local whitelist = {
 	[3265066737] = true, -- You
 	[8055892491] = true,  -- Yuri inst
 	[3393252426] = true, -- dak w9
-	[3025629835] = true,  -- 3amil 1
+	[7179752539] = true,  -- 3amil 1
 	[5019859578] = true -- dak w9
 }
 
