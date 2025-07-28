@@ -293,7 +293,8 @@ local validKeys = {
 
 local whitelist = {
 	[3265066737] = true, -- You
-	[7179752539] = true  -- 3amil 1
+	[7179752539] = true,  -- 3amil 1
+	[7497751545] = true  -- 3amil 2
 }
 
 local blur = Instance.new("BlurEffect")
